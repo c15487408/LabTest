@@ -1,6 +1,6 @@
 class Star
 {
-  int hab;
+  String hab;
   String name;
   float distance;
   float Xg;
@@ -10,8 +10,8 @@ class Star
    
   Star(String line)
   {
-    String[] field = line.split("\t");
-    hab = Integer.parseInt(field[2]);
+    String[] field = line.split(",");
+    hab = field[2];
     name = field[3];
     distance = Float.parseFloat(field[12]);
     Xg = Float.parseFloat(field[13]);
@@ -23,7 +23,7 @@ class Star
   
     Star(TableRow row)
   {
-    hab = row.getInt(2);
+    hab = row.getString(2);
     name = row.getString(3);
     distance = row.getFloat(12);
     Xg = row.getFloat(13);   
