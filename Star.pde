@@ -1,3 +1,4 @@
+//Q1
 class Star
 {
   String hab;
@@ -20,15 +21,15 @@ class Star
     AbsMag = Float.parseFloat(field[16]);
 
   }
-  
-    Star(TableRow row)
+  //Q2
+    Star(TableRow tablerow)
   {
-    hab = row.getString(2);
-    name = row.getString(3);
-    distance = row.getFloat(12);
-    Xg = row.getFloat(13);   
-    Yg = row.getFloat(14);   
-    Zg= row.getFloat(15);   
-    AbsMag = row.getFloat(16);   
+    hab = tablerow.getString(2);
+    name = tablerow.getString(3);
+    distance = tablerow.getFloat(12);
+    Xg = tablerow.getFloat(13);   
+    Yg = tablerow.getFloat(14);   
+    Zg= tablerow.getFloat(15);   
+    AbsMag = tablerow.getFloat(16);   
   }
 }

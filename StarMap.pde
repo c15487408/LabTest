@@ -1,3 +1,11 @@
+/*
+Reyan Jaimon
+C15487408
+Lab Group B
+DT228/2
+*/
+
+//Q3
 ArrayList<Star> stars = new ArrayList<Star>(); //Q3
 
 int nbOfHorizontalLines = 16; // For 50 pixels
@@ -35,6 +43,8 @@ void  printStars(){
 
 
 void draw() {
+  
+  //Q6 GRID
   background (0);
   stroke(128,0,128);
 
