@@ -1,3 +1,11 @@
+/*
+Reyan Jaimon
+C15487408
+Lab Group B
+DT228/2
+*/
+
+
 //Q1
 class Star
 {
